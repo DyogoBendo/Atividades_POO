@@ -13,5 +13,17 @@ import java.util.ArrayList;
  */
 public class Cofre {
     ArrayList<Moeda> dindin = new ArrayList<>();
+    private int senha;
+    String nome;
+    public void setSenha(){
+            int senha_nova;
+            do {
+                senha_nova = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite uma senha de 6 digitos"));
+            } while (senha_nova > 1000000 || 99999 > senha_nova);
+            this.senha = senha_nova;
+        }
+    public int getSenha(){
+        return this.senha;
+    }
     
 }
