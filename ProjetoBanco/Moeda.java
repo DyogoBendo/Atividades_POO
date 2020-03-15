@@ -10,5 +10,6 @@ package com.mycompany.banco_aula9;
  * @author Dyogo
  */
 public class Moeda {
-    int valor;
+    int valores = 0;
+    String tipo = "";
 }
